@@ -4,4 +4,4 @@ EXPOSE 80
 
 COPY bin/mysql.sh /usr/local/bin/
 
-CMD ["mysql-5.7","-D","FOREGROUND"]
+RUN ["chmod", "+x", "/usr/local/bin/mysql.sh"]
